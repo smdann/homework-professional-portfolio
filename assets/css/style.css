@@ -7,6 +7,13 @@
     
 }
 
+h3 {
+    background-color: #F4EAE9;
+    color: black;
+    
+}
+
+
 body {
     padding: 1px;
 }
@@ -19,6 +26,7 @@ header {
     height: 75px;
     left: 0;
     top: 0;
+    z-index: 2;
 }
 
 #header-1 {
@@ -32,16 +40,16 @@ ul {
     overflow: hidden;
     position: absolute;
     top: 10px;
-    left: 60%;
+    left: 70%;
 }
 
 li {
+    display: inline;
     float: right;
     padding-right: 15px;
 }
 
 a {
-    display: inline-block;
     padding: 15px;
     background-color: #F4EAE9;
 }
@@ -56,19 +64,55 @@ a:visited {
 }
 
 /* About Me Section */
-.about-me {
-    padding-top: 100px;
-    padding-left: 45px;
-    padding-right: 400px;
+#about-me-header {
+    padding-top: 90px;
+    padding-left: 250px;
 }
 
-#about-me {
-    display: inline;
+.about-me {
+    text-align: left;
+}
+
+.about-paragraph {
+    padding-right: 200px;
+    
 }
 
 #self-photo {
-    max-width: 25%;
+    max-width: 20%;
     height: auto;
+    padding-top: 65px;
+}
+
+/* .line-design {
+    border: 2px solid #F4EAE9;
+    
+} */
+
+/* Work / Projects Section */
+.work-projects {
+    padding-left: 5%;
+    padding-top: 20px;
+}
+
+.work-image {
+    display: block;
+    max-width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Section */
+.contact-me {
+    background-color: #F4EAE9;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.contact-paragraph {
+    text-align: center;
+    color: white;
 }
 
 /* Footer */
