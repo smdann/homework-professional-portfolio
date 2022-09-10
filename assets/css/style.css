@@ -1,0 +1,54 @@
+/* Global */
+* {
+    font-family: 'Calibri', 'Tahoma', 'sans-serif'
+}
+
+body {
+    padding: 1px;
+}
+
+/* Header */
+.header {
+    background-color: rgb(248, 228, 235);
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#header-typography {
+    margin:auto
+}
+
+li{
+    float: right;
+}
+
+a {
+    display: block;
+    padding: 15px;
+    background-color: rgb(248, 228, 235);
+}
+
+a:hover, a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: rgb(248, 228, 235);
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+}
