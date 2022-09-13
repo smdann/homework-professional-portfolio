@@ -1,53 +1,52 @@
 /* Global */
 * {
-    /* margin: 0; */
-    /* padding: 0; */
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
     font-family: 'Calibri', 'Tahoma', 'sans-serif'
-    
 }
-
-h3 {
-    background-color: #F4EAE9;
-    color: black;
-    
-}
-
 
 body {
-    padding: 1px;
+    position: relative;
+}
+
+main {
+    /* display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    padding-top: 55px; */
+   
+}
+
+section {
+    /* padding: 0.5%; */
 }
 
 /* Header */
-header {
+.main-header {
+    display: flex;
+    justify-content: space-between;
     background-color: #F4EAE9;
-    position: fixed;
     width: 100%;
     height: 75px;
     left: 0;
     top: 0;
-    z-index: 2;
 }
 
-#header-1 {
-    position: relative;
-    left: 20px;
-
+h1 {
+    margin-top: 15px; 
+    margin-left: 30px;
 }
 
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    position: absolute;
-    top: 10px;
-    left: 70%;
+/* Navigational Menu */
+/* nav {
+    display: flex;
+} */
+
+nav {
+    margin-top: 25px;
 }
 
-li {
-    display: inline;
-    float: right;
-    padding-right: 15px;
-}
 
 a {
     padding: 15px;
@@ -63,64 +62,44 @@ a:visited {
     color: black;
 }
 
+/* Container 1 */
+.flex-container-1 {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+
+/* Container 2 */
+
+/* Image of Self */
+#self-image {
+    max-width: 100%;
+    height: auto;
+    
+}
+
 /* About Me Section */
 #about-me-header {
-    padding-top: 90px;
-    padding-left: 250px;
+    padding-top: 10px;
 }
 
-.about-me {
-    text-align: left;
-}
-
-.about-paragraph {
-    padding-right: 200px;
-    
-}
-
-#self-photo {
-    max-width: 20%;
-    height: auto;
-    padding-top: 65px;
-}
-
-/* .line-design {
-    border: 2px solid #F4EAE9;
-    
-} */
-
-/* Work / Projects Section */
-.work-projects {
-    padding-left: 5%;
-    padding-top: 20px;
-}
-
+/* Work Section */
 .work-image {
-    display: block;
-    max-width: 75%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-/* Contact Section */
-.contact-me {
-    background-color: #F4EAE9;
-    padding-left: 5%;
-    padding-top: 1%;
-}
-
-.contact-paragraph {
-    text-align: center;
-    color: white;
 }
 
 /* Footer */
 .footer {
-    text-align: center;
-    background-color :#F4EAE9;
-    position: absolute;
-    /* bottom: 0; */
-    width: 100%;
-    left: 0;
+   text-align: center;
+   background-color :#F4EAE9;
+   height: 20px;
+   width: 100%;
+   bottom: 0;
+   
 }
+
+@media screen and (max-width: 768px) {
+    .main-header, .flex-container-1 {
+      flex-direction: column;
+    }
+  }
