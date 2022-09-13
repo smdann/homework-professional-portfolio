@@ -43,15 +43,13 @@ a:visited {
 /* Aside - About Me Section */
 aside {
     flex: 1;
-    background-color: #F4EAE9;
+    background-color: #ffffff;
     text-align: center;
     padding: 20px;
 }
 
 .self-photo {
-    /* max-width: 200px;
-    min-width: 50px;
-    flex: 1 1 200px; */
+    max-width: 75%;
 }
 
 /* .about-header {
@@ -68,10 +66,42 @@ aside {
 main {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
-.work-image {
+.work-figures {
+    position: relative;
+}
 
+.work-figures:hover .caption-overlay {
+    opacity: 1;
+}
+
+.caption-overlay {
+    position: absolute;
+    bottom: 0;
+    background: aqua;
+    opacity: 0;
+    width: 50%;
+    padding: 20px;
+}
+
+.work-image-1 {
+    /* flex: 2;
+    flex-grow: 2; */
+    width: 100%;
+}
+
+.work-image-2 {
+    /* flex: 1;
+    flex-grow: 1; */
+    width: 50%;
+}
+
+.work-image-3 {
+    /* flex: 1;
+    flex-grow: 1; */
+    width: 50%;
 }
 
 /* Footer */
