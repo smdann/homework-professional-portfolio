@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Calibri', 'Tahoma', 'sans-serif'
+    font-family: 'Tahoma', 'sans-serif'
 }
 
 /* Header */
@@ -36,13 +36,13 @@ nav {
     text-align: center;
 }
 
-a:hover, a:link {
+a:visited, a:link {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-a:visited {
-    color: black;
+a:hover {
+    color: #EDF6F9;
 }
 
 /* Aside - About Me Section */
@@ -56,16 +56,6 @@ aside {
 .self-photo {
     max-width: 75%;
 }
-
-/* .about-header {
-    flex-direction: column;
-    flex: 2 ;
-}
-
-.about-paragraph {
-    flex-direction: column;
-    flex: 3 ;
-} */
 
 /* Main Section */
 main {
@@ -86,7 +76,8 @@ p {
 
 /* Work Section */
 .work-section {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     flex: 2;
 }
 
@@ -99,13 +90,22 @@ p {
     padding: 10px;
 }
 
+.work-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .work-image-2, .work-image-3 {
-    width: 50%;
+    width: 100%;
     padding: 10px;
 }
 
 .work-figures:hover .caption-overlay {
-    opacity: 1;
+    opacity: 0.9;
+}
+
+.work-figures:hover {
+    opacity: 0.9;
 }
 
 .caption-overlay {
