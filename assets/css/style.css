@@ -25,6 +25,8 @@ h2, h3 {
 /* Navigational Menu */
 nav {
     display: flex;
+    justify-content: flex-end;
+    background-color:#83C5BE;
 }
 
 
@@ -32,7 +34,6 @@ nav {
     padding: 15px;
     background-color: #83C5BE;
     text-align: center;
-    width: 100%;
 }
 
 a:hover, a:link {
@@ -49,7 +50,7 @@ aside {
     flex: 1;
     background-color: #EDF6F9;
     text-align: center;
-    padding: 10px;
+    margin: 10px;
 }
 
 .self-photo {
@@ -70,6 +71,7 @@ aside {
 main {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     padding: 20px;
     background-color: #006D77;
 }
@@ -84,8 +86,7 @@ p {
 
 /* Work Section */
 .work-section {
-    /* display: flex;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
     flex: 2;
 }
 
@@ -94,7 +95,6 @@ p {
 }
 
 .work-image-1 {
-
     width: 100%;
     padding: 10px;
 }
