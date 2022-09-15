@@ -16,6 +16,7 @@ header {
 h1, h2 {
     padding: 10px;
     margin: 0;
+    text-align: center;
 }
 
 h2, h3 {
@@ -28,7 +29,6 @@ nav {
     justify-content: flex-end;
     background-color:#83C5BE;
 }
-
 
 .nav-link {
     padding: 15px;
@@ -43,18 +43,6 @@ a:visited, a:link {
 
 a:hover {
     color: #EDF6F9;
-}
-
-/* Aside - About Me Section */
-aside {
-    flex: 1;
-    background-color: #EDF6F9;
-    text-align: center;
-    margin: 10px;
-}
-
-.self-photo {
-    max-width: 75%;
 }
 
 /* Main Section */
@@ -72,6 +60,19 @@ h3 {
 
 p {
     padding: 20px;
+}
+
+/* Aside - About Me Section */
+aside {
+    flex: 1;
+    background-color: #EDF6F9;
+    text-align: center;
+    margin: 10px;
+}
+
+.self-photo {
+    width: 50%;
+    height: auto;
 }
 
 /* Work Section */
@@ -117,6 +118,18 @@ p {
     padding: 10px;
 }
 
+/* Contact Section */
+.contact-me {
+    width: 100%;
+    padding: 40px; 
+    text-align: center;
+    color: #EDF6F9;
+}
+
+.contact-icons {
+    padding: 10px;
+}
+
 /* Footer */
 .footer {
    text-align: center;
@@ -127,8 +140,9 @@ p {
    
 }
 
-@media screen and (max-width: 768px) {
-    .header, nav, aside, main {
-      flex-direction: column;
+/* Responsive Layout */
+@media screen and (max-width: 769px ) {
+    header, nav, main {
+        flex-direction: column;
     }
-  }
+}
